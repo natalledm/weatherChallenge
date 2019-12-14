@@ -46,14 +46,16 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/proxy'
+  ],
+  proxy: [
+    ['/api', { target: 'https://api.openweathermap.org', pathRewrite: { '^/api': '/data/2.5' } }]
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {
-  },
   /*
   ** Build configuration
   */
