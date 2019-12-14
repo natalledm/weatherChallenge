@@ -35,14 +35,14 @@ export default {
   components: {
     Logo
   },
-  mounted() {
-    this.$axios.$get(process.env.NUXT_APP_API_BASE_URL, {
-      params: {
-        q:'london',
-        appid: process.env.NUXT_APP_API_ID
-      }
-    })
-  }
+  // mounted() {
+  //   this.$axios.$get(process.env.NUXT_APP_API_BASE_URL, {
+  //     params: {
+  //       q:'london',
+  //       appid: process.env.NUXT_APP_API_ID
+  //     }
+  //   })
+  // }
 }
 </script>
 
